@@ -1,0 +1,24 @@
+version: "3.1"
+stories:
+  - story: Приветствие и запрос помощи
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_help
+  - story: Информация о проекте
+    steps:
+      - intent: arch_description
+      - action: utter_describe_architecture
+  - story: Микросервисная архитектура
+    steps:
+      - intent: msa
+      - action: utter_microservices
+  - story: Паттерны
+    steps:
+      - intent: patterns
+      - action: utter_architecture_patterns
+  - story: Безопасность
+    steps:
+      - intent: security
+      - action: utter_security

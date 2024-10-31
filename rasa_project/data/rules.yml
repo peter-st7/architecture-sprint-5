@@ -1,0 +1,14 @@
+version: "3.1"
+rules:
+  - rule: Приветствие
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: Прощание
+    steps:
+      - intent: bye
+      - action: utter_goodbye
+  - rule: Запрос помощи
+    steps:
+      - intent: ask_help
+      - action: utter_help
